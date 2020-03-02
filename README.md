@@ -3,7 +3,7 @@
 ## This repository
 This code can be used to reproduce the results of [this manuscript](https://arxiv.org/abs/1911.02648). You first need to clone [PeerRead](https://github.com/allenai/PeerRead) repository to obtain the data used in this analysis.
 
-## Using the scripts
+## Using the scripts in code folder
 The first script you'll need is the make_data.py, which will load the json files in the PeerRead repository, preprocess the text content and generate the data files necessary for the analysis in the manuscript. Running all the script might take 36 to 48 hours on a standard computer.
 
 The preprocessing.py and abstract_cleanup.py contain functions used by make_data.py to preprocess the data.
@@ -28,4 +28,19 @@ This script build a logistic regression to predict the peer review outcome of ma
 
 ### get_stem_predictors.py
 This script will extract the most relevant stems to predict manuscript acceptance and rejection. 
+
+## Data folder
+
+### AI_jargon_processed.csv
+List of AI jargon. See Methods section of manuscript for sources used to compile the list.
+
+### jargonListFinal.csv
+List of specific and general scientific jargon from https://elifesciences.org/articles/27725
+
+### NDCeasywords.txt
+List of easy words used for NDC readability score
+
+### variables.csv
+Variables used for the psycholinguistic analysis of the word content of manuscripts.
+
 
